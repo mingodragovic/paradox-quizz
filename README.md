@@ -10,8 +10,11 @@ A production-ready personality quiz backend built with NestJS, PostgreSQL, and P
 
 ⦿ Database: Neon PostgreSQL (Cloud)
 
-⦿ Note: Swagger UI is enabled in production for easy endpoint testing during review. Normally this would be restricted in production.
+# Notes:
+⦿ Swagger UI is enabled in production for easy endpoint testing during review. Normally this would be restricted in production.
 
+⦿ This backend runs on Render’s free tier, which may idle the server after inactivity.
+To prevent cold starts, UptimeRobot monitoring is enabled to send an HTTP request to the /health endpoint every 5 minutes, keeping the service responsive.
 # Core Features
 Quiz Management: 5 questions, 4 options each, 4 personality types
 
