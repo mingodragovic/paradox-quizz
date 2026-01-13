@@ -87,7 +87,8 @@ curl -X POST https://personality-quiz-backend-eusl.onrender.com/quiz/submit \
     ]
   }'
 
-🤝 What This Demonstrates
+# What This Demonstrates
+
 ⦿ Full-stack architecture with clear separation of concerns
 
 ⦿ Production deployment with cloud databases
