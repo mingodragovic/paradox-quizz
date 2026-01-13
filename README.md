@@ -12,7 +12,7 @@ Database: Neon PostgreSQL (Cloud)
 
 Note: Swagger UI is enabled in production for easy endpoint testing during review. Normally this would be restricted in production.
 
-⦿ Core Features
+# Core Features
 Quiz Management: 5 questions, 4 options each, 4 personality types
 
 Intelligent Scoring: Weighted questions with tie-breaking rules
@@ -23,7 +23,7 @@ Validation: Multi-layer validation (DTO, business logic, database)
 
 Production Ready: Connection pooling, SSL, error handling
 
-⦿ Tech Stack
+# Tech Stack
 Backend: NestJS 11 + TypeScript
 
 Database: PostgreSQL (Neon)
@@ -34,7 +34,7 @@ Deployment: Render (Backend) + Neon (Database)
 
 Documentation: Swagger/OpenAPI
 
-⦿ Key Endpoints
+# Key Endpoints
 GET /quiz - Get quiz configuration (questions + personalities)
 
 POST /quiz/submit - Submit answers, get personality result with scoring
@@ -45,7 +45,7 @@ GET /attempts - Paginated attempt history
 
 GET /questions/personalities - Get personality metadata
 
-⦿ How It Works
+# How It Works
 User answers all 5 questions (each has 4 options)
 
 Backend calculates scores: personalityScore = optionPoints × questionWeight
@@ -54,23 +54,23 @@ Tie-breaking: Highest raw points → Lowest personality ID
 
 Returns personality result with score breakdown
 
-⦿ Deployment
+# Deployment
 Backend: Render 
 Database: Neon 
 Frontend: Vercel 
 
-⦿ Scoring Example
+# Scoring Example
 
 Question 1 (weight: 1.5)
 Option A → Adventurer: 10 points × 1.5 = 15 points
 Total Score = Σ(optionPoints × questionWeight)
 
-⦿ Quick Test
+# Quick Test
 
-# Get quiz config
+⦿ Get quiz config
 curl https://personality-quiz-backend-eusl.onrender.com/quiz
 
-# Submit quiz (Adventurer profile)
+⦿ Submit quiz (Adventurer profile)
 curl -X POST https://personality-quiz-backend-eusl.onrender.com/quiz/submit \
   -H "Content-Type: application/json" \
   -d '{
