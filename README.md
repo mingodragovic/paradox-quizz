@@ -10,10 +10,6 @@ A production-ready personality quiz backend built with NestJS, PostgreSQL, and P
 
 ⦿ Front-end Repository: [https://github.com/mingodragovic/front-end-quiz](https://github.com/mingodragovic/front-end-quiz)
 
-
-
-⦿ Database: Neon PostgreSQL (Cloud)
-
 # Notes:
 ⦿ Swagger UI is enabled in production for easy endpoint testing during review. Normally this would be restricted in production.
 
